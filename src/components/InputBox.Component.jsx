@@ -4,13 +4,13 @@ const InputBox = () => {
     const [name, setName] = useState("");
   return (
     <div>
-        <div>Enter your name : </div>
-        <input type="text" name="input-name" onChange={(e) => (setName(e.target.value))} />
-        <div className="output">
+        <p>Enter your name : </p>
+        <input type="text" onChange={(e) => (setName(e.target.value))} />
+        <p>
             {
                 name === ""?"": `Hello ${name}!`
             }
-        </div>
+        </p>
     </div>
   )
 }
